@@ -45,7 +45,7 @@ then
   printf "\n MongoDB Selected.\n\n"  
   apt-get -q -y install mongodb-10gen
   pecl install mongo
-  echo extension=mongo.so>>/etc/php5/fpm/php.ini
+  echo "extension=mongo.so">>/etc/php5/fpm/php.ini
 fi
 
 #Uncomment Few Lines from Virtual Host
