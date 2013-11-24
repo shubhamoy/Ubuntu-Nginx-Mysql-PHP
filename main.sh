@@ -42,7 +42,8 @@ then
   apt-get -q -y install mysql-server mysql-client php5-mysql
 elif [ "$input" == "mongo" ];
 then
-  printf "\n MongoDB Selected.\n\n"  
+  printf "\n MongoDB Selected.\n\n"
+  sleep 0.9  
   apt-get -q -y install mongodb-10gen
   pecl install mongo
   echo "extension=mongo.so">>/etc/php5/fpm/php.ini
